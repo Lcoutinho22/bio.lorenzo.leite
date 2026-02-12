@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Team Garin | Hub Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <button class="theme-toggle glass-card" id="themeBtn"><i class="ph ph-moon"></i></button>
+
+        <header class="fade-in-up">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <img src="https://via.placeholder.com/200" alt="Arthur Garin" class="avatar-img">
+            </div>
+            <h1>Team Garin</h1>
+            <p class="subtitle">Especialista em transformação física. Método validado.</p>
+            
+            <div class="social-bar">
+                <a href="#" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="social-btn"><i class="ph ph-youtube-logo"></i></a>
+                <a href="#" class="social-btn"><i class="ph ph-whatsapp-logo"></i></a>
+            </div>
+            <a href="#planos" class="btn-primary"><i class="ph ph-lightning-fill"></i> COMEÇAR AGORA</a>
+        </header>
+
+        <section class="bio-card glass-card fade-in-up">
+            <div class="bio-header">
+                <div class="bio-title"><h3>Arthur Garin</h3><span>Head Coach</span></div>
+            </div>
+            <p class="bio-text">Atuo há 10 anos transformando corpos comuns em máquinas de performance com ciência e prática.</p>
+            <div class="stats-row">
+                <div class="stat-item"><strong>+1k</strong><small>Alunos</small></div>
+                <div class="stat-item"><strong>12x</strong><small>Campeão</small></div>
+                <div class="stat-item"><strong>10a</strong><small>Experiência</small></div>
+            </div>
+        </section>
+
+        <div id="planos" class="fade-in-up">
+            <div class="section-header">
+                <div class="section-icon"><i class="ph ph-crown-simple"></i></div>
+                <span class="section-title">Escolha seu Plano</span>
+            </div>
+            
+            <div class="carousel-track">
+                
+                <div class="plan-card">
+                    <div>
+                        <h4 class="plan-name">Start</h4>
+                        <div class="divider"></div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-check-circle"></i> Treino Individualizado</li>
+                            <li><i class="ph ph-check-circle"></i> Dieta Flexível</li>
+                            <li><i class="ph ph-check-circle"></i> Acesso ao App</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline" onclick="selectPlan('Plano Start')">Saber Mais</button>
+                </div>
+
+                <div class="plan-card highlight">
+                    <div class="badge-featured">Mais Popular</div>
+                    <div>
+                        <h4 class="plan-name" style="color: var(--primary);">Evolution</h4>
+                        <div class="divider"></div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-star-fill"></i> <strong>Tudo do Start</strong></li>
+                            <li><i class="ph ph-check-circle"></i> Ajustes Quinzenais</li>
+                            <li><i class="ph ph-check-circle"></i> Suporte WhatsApp VIP</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary" onclick="selectPlan('Plano Evolution')">QUERO EVOLUIR</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="badge-discount">Completo</div>
+                    <div>
+                        <h4 class="plan-name">Pro Anual</h4>
+                        <div class="divider"></div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-check-circle"></i> Acompanhamento Premium</li>
+                            <li><i class="ph ph-check-circle"></i> Videocall Mensal</li>
+                            <li><i class="ph ph-check-circle"></i> Planner Exclusivo</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline" onclick="selectPlan('Plano Pro Anual')">Saber Mais</button>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="fade-in-up">
+            <div class="section-header">
+                <div class="section-icon"><i class="ph ph-camera"></i></div>
+                <span class="section-title">Resultados Reais</span>
+            </div>
+            <div class="results-scroller">
+                <div class="result-card">
+                    <img src="./image/WhatsApp Image 2026-02-04 at 14.40.24.jpeg" class="img-layer img-after" alt="Depois">
+                    <img src="./image/foto2.jpeg" class="img-layer img-before" alt="Antes">
+                    <div class="touch-hint"><i class="ph ph-hand-tap"></i> Segure para ver</div>
+                </div>
+                <div class="result-card">
+                    <img src="https://via.placeholder.com/300x400/2563eb/ffffff?text=DEPOIS" class="img-layer img-after" alt="Depois">
+                    <img src="https://via.placeholder.com/300x400/111111/666666?text=ANTES" class="img-layer img-before" alt="Antes">
+                    <div class="touch-hint"><i class="ph ph-hand-tap"></i> Segure para ver</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="marquee-section fade-in-up">
+            <div class="marquee-track">
+                <div class="feedback-card">
+                    <div style="color:var(--accent);">★★★★★</div>
+                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
+                    <small style="display:block; margin-top:10px;">- Lucas S.</small>
+                </div>
+                <div class="feedback-card">
+                    <div style="color:var(--accent);">★★★★★</div>
+                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Treino intenso e dieta fácil de seguir."</p>
+                    <small style="display:block; margin-top:10px;">- Ana P.</small>
+                </div>
+                <div class="feedback-card">
+                    <div style="color:var(--accent);">★★★★★</div>
+                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"O suporte no WhatsApp é diferenciado."</p>
+                    <small style="display:block; margin-top:10px;">- Marcos V.</small>
+                </div>
+                <div class="feedback-card">
+                    <div style="color:var(--accent);">★★★★★</div>
+                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
+                    <small style="display:block; margin-top:10px;">- Lucas S.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in-up">
+            <div class="section-header">
+                <div class="section-icon"><i class="ph ph-question"></i></div>
+                <span class="section-title">Dúvidas Frequentes</span>
+            </div>
+            <div class="faq-box">
+                <details class="glass-card"><summary>Funciona para iniciantes?</summary><div class="answer">Sim! 80% dos alunos começam do zero.</div></details>
+                <details class="glass-card"><summary>Preciso de suplementos?</summary><div class="answer">Não. Priorizamos comida de verdade.</div></details>
+                <details class="glass-card"><summary>Tem dieta incluída?</summary><div class="answer">Sim, calculada para seu objetivo.</div></details>
+                <details class="glass-card"><summary>Treinar em casa dá certo?</summary><div class="answer">Sim, adapto para peso do corpo se necessário.</div></details>
+                <details class="glass-card"><summary>Formas de pagamento?</summary><div class="answer">Aceitamos PIX e Cartão de Crédito.</div></details>
+            </div>
+        </section>
+
+        <section id="form" class="fade-in-up">
+            <div class="form-area glass-card">
+                <h3 style="text-align:center; font-size:1.4rem; margin-bottom:8px; color:var(--text-main);">Aplicação</h3>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-muted); margin-bottom:24px;">Preencha para análise.</p>
+                <form id="leadForm">
+                    <label>Nome Completo</label><input type="text" id="nome" required>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                        <div><label>Idade</label><input type="number" id="idade"></div>
+                        <div><label>Peso</label><input type="number" id="peso"></div>
+                    </div>
+                    <label>Objetivo</label>
+                    <select id="objetivo">
+                        <option>Hipertrofia</option>
+                        <option>Emagrecimento</option>
+                        <option>Saúde</option>
+                    </select>
+                    <input type="hidden" id="planoSelecionado">
+                    <button type="submit" class="btn-primary">ENVIAR NO WHATSAPP <i class="ph ph-whatsapp-logo"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <footer>&copy; 2026 Team Garin.</footer>
+        <a href="https://wa.me/5521999999999" class="whatsapp-float"><i class="ph ph-whatsapp-logo"></i></a>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
