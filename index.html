@@ -1,186 +1,424 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Team Garin | Hub Digital</title>
-    
+
+    <!-- ===== SEO PRIMARY ===== -->
+    <title>Team Leite | Personal Trainer Online — Treino e Dieta Personalizados</title>
+    <meta name="description" content="Personal Trainer online Lorenzo Leite. Método validado com treino e dieta 100% individualizados para hipertrofia, emagrecimento e saúde. Atendimento direto via WhatsApp.">
+    <meta name="keywords" content="personal trainer online, treino personalizado, dieta personalizada, Lorenzo Leite, hipertrofia, emagrecimento, musculação">
+    <meta name="author" content="Lorenzo Leite Ferreira">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://teamleite.com.br/">
+
+    <!-- ===== OPEN GRAPH (Facebook / WhatsApp) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teamleite.com.br/">
+    <meta property="og:title" content="Lorenzo Leite | Personal Trainer Online">
+    <meta property="og:description" content="Treino e dieta 100% individualizados. Método validado, suporte direto e resultados reais.">
+    <meta property="og:image" content="https://teamleite.com.br/image/og-cover.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Team Leite">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lorenzo Leite | Personal Trainer Online">
+    <meta name="twitter:description" content="Treino e dieta 100% individualizados. Resultado real, método validado.">
+    <meta name="twitter:image" content="https://teamleite.com.br/image/og-cover.jpg">
+
+    <!-- ===== PERFORMANCE ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- ===== STYLES & ICONS ===== -->
     <link rel="stylesheet" href="./css/style.css">
-    
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+    <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Team Leite — Personal Trainer",
+      "description": "Personal Trainer online especializado em treino e dieta personalizados para hipertrofia, emagrecimento e saúde.",
+      "url": "https://teamleite.com.br/",
+      "telephone": "+55-27-99717-0215",
+      "sameAs": [
+        "https://www.instagram.com/teamleite"
+      ]
+    }
+    </script>
 </head>
 <body>
 
-    <div class="app-container">
-        
-        <button class="theme-toggle glass-card" id="themeBtn"><i class="ph ph-moon"></i></button>
+    <div class="app-container glass-wrapper">
 
-        <header class="fade-in-up">
+        <!-- Botão de alternância de tema -->
+        <button class="theme-toggle glass-card" id="themeBtn" aria-label="Alternar tema claro/escuro">
+            <i class="ph ph-moon" aria-hidden="true"></i>
+        </button>
+
+        <!-- ===== CABEÇALHO / PERFIL ===== -->
+        <header class="fade-in-up" role="banner">
             <div class="avatar-container">
-                <div class="avatar-ring"></div>
-                <img src="https://via.placeholder.com/200" alt="Arthur Garin" class="avatar-img">
+                <div class="avatar-ring" aria-hidden="true"></div>
+                <img src="./image/perfil.jpeg" alt="Foto de Lorenzo Leite, Personal Trainer" class="avatar-img" width="120" height="120">
             </div>
-            <h1>Team Garin</h1>
+            <h1>Team Leite</h1>
             <p class="subtitle">Especialista em transformação física. Método validado.</p>
-            
-            <div class="social-bar">
-                <a href="#" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
-                <a href="#" class="social-btn"><i class="ph ph-youtube-logo"></i></a>
-                <a href="#" class="social-btn"><i class="ph ph-whatsapp-logo"></i></a>
-            </div>
-            <a href="#planos" class="btn-primary"><i class="ph ph-lightning-fill"></i> COMEÇAR AGORA</a>
+
+            <nav class="social-bar" aria-label="Redes sociais">
+                <a href="https://www.instagram.com/teamleite" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="ph ph-instagram-logo" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://wa.me/5527997170215" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+                </a>
+            </nav>
+
+            <a href="#planos" class="btn-primary">
+                <i class="ph ph-lightning-fill" aria-hidden="true"></i> COMEÇAR AGORA
+            </a>
         </header>
 
-        <section class="bio-card glass-card fade-in-up">
-            <div class="bio-header">
-                <div class="bio-title"><h3>Arthur Garin</h3><span>Head Coach</span></div>
+        <!-- ===== BIO / SOBRE ===== -->
+        <article class="bio-card glass-card fade-in-up" aria-label="Sobre Lorenzo Leite">
+
+            <!-- Foto de perfil centralizada -->
+            <div class="bio-avatar-wrap">
+                <div class="bio-avatar-ring" aria-hidden="true"></div>
+                <img src="./image/perfil.jpeg" alt="Lorenzo Leite — Personal Trainer" class="bio-avatar-img" width="90" height="90">
+                <div class="bio-avatar-badge" aria-label="Certificado CBMF">
+                    <i class="ph ph-seal-check" aria-hidden="true"></i>
+                </div>
             </div>
-            <p class="bio-text">Atuo há 10 anos transformando corpos comuns em máquinas de performance com ciência e prática.</p>
-            <div class="stats-row">
-                <div class="stat-item"><strong>+1k</strong><small>Alunos</small></div>
-                <div class="stat-item"><strong>12x</strong><small>Campeão</small></div>
-                <div class="stat-item"><strong>10a</strong><small>Experiência</small></div>
+
+            <!-- Título e credencial -->
+            <header class="bio-header">
+                <div class="bio-title">
+                    <h2>Lorenzo Leite</h2>
+                    <span class="bio-credential"><i class="ph ph-certificate" aria-hidden="true"></i> Treinador Esportivo · CBMF</span>
+                </div>
+            </header>
+
+            <p class="bio-text">
+                Estou na musculação desde os 14 anos. Formado como Treinador Esportivo de Musculação e Fisiculturismo pela <strong>CBMF</strong>, com incontáveis horas de estudo e prática.
+                Meu propósito é simples: elaborar um plano que funcione para <em>você</em> e te acompanhar até o resultado acontecer.
+            </p>
+
+            <ul class="stats-row" aria-label="Diferenciais">
+                <li class="stat-item">
+                    <i class="ph ph-flask" aria-hidden="true"></i>
+                    <small>Baseado na ciência, em resultados reais.</small>
+                </li>
+                <li class="stat-item">
+                    <i class="ph ph-user-focus" aria-hidden="true"></i>
+                    <small>100% individualizado</small>
+                </li>
+                <li class="stat-item">
+                    <i class="ph ph-chart-line-up" aria-hidden="true"></i>
+                    <small>Nada de milagroso, apenas o que funciona.</small>
+                </li>
+            </ul>
+        </article>
+
+        <!-- ===== PLANOS ===== -->
+        <section id="planos" class="fade-in-up" aria-labelledby="titulo-planos">
+            <div class="section-header">
+                <div class="section-icon" aria-hidden="true">
+                    <i class="ph ph-crown-simple"></i>
+                </div>
+                <h2 id="titulo-planos" class="section-title">Escolha seu Plano</h2>
+            </div>
+
+            <div class="carousel-track" role="list" aria-label="Planos disponíveis">
+
+                <article class="plan-card" role="listitem">
+                    <div>
+                        <h3 class="plan-name">Treino ou Dieta</h3>
+                        <div class="divider" aria-hidden="true"></div>
+                        <ul class="feature-list" aria-label="Preços do plano Treino ou Dieta">
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Mensal: R$169,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Trimestral: R$449,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Semestral: R$729,00</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline" onclick="selectPlan('Plano Start')" type="button">Saber Mais</button>
+                </article>
+
+                <article class="plan-card highlight" role="listitem">
+                    <div class="badge-featured" aria-label="Mais Popular">Mais Popular</div>
+                    <div>
+                        <h3 class="plan-name" style="color: var(--primary);">Treino + Dieta</h3>
+                        <div class="divider" aria-hidden="true"></div>
+                        <ul class="feature-list" aria-label="Preços do plano Treino + Dieta">
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Mensal: R$289,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Trimestral: R$759,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Semestral: R$1.499,00</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary" onclick="selectPlan('Plano Evolution')" type="button">QUERO EVOLUIR</button>
+                </article>
+
+                <article class="plan-card" role="listitem">
+                    <div class="badge-discount" aria-label="Plano Casal">Plano Casal</div>
+                    <div>
+                        <h3 class="plan-name">Treino + Dieta Casal</h3>
+                        <div class="divider" aria-hidden="true"></div>
+                        <ul class="feature-list" aria-label="Preços do plano Casal">
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Mensal: R$520,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Trimestral: R$1.369,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> Semestral: R$2.699,00</li>
+                            <li><i class="ph ph-check-circle" aria-hidden="true"></i> 10% de desconto em todos os planos</li>
+                        </ul>
+                    </div>
+                    <button class="btn-outline" onclick="selectPlan('Plano Casal')" type="button">Saber Mais</button>
+                </article>
+
+            </div>
+
+            <p class="bio-text text2">
+                <i class="ph ph-check-circle" aria-hidden="true"></i>
+                Atendimento 100% online, com acompanhamento individualizado, ajustes conforme evolução e suporte direto comigo.
+            </p>
+        </section>
+
+        <!-- ===== RESULTADOS ===== -->
+        <section class="fade-in-up" aria-labelledby="titulo-resultados">
+            <div class="section-header">
+                <div class="section-icon" aria-hidden="true">
+                    <i class="ph ph-camera"></i>
+                </div>
+                <h2 id="titulo-resultados" class="section-title">Resultados Reais</h2>
+            </div>
+            <div class="results-scroller" role="list" aria-label="Fotos de transformação dos alunos">
+                <figure class="result-card" role="listitem">
+                    <img src="./image/depois-1.jpeg" class="img-layer img-after" alt="Aluno após o programa — resultado final">
+                    <img src="./image/antes-1.jpeg" class="img-layer img-before" alt="Aluno antes de iniciar o programa">
+                    <figcaption class="touch-hint">
+                        <i class="ph ph-hand-tap" aria-hidden="true"></i> Segure para ver
+                    </figcaption>
+                </figure>
+
+                <figure class="result-card" role="listitem">
+                    <img src="./image/depois-2.jpeg" class="img-layer img-after" alt="Aluno após o programa — resultado final">
+                    <img src="./image/antes-2.jpeg" class="img-layer img-before" alt="Aluno antes de iniciar o programa">
+                    <figcaption class="touch-hint">
+                        <i class="ph ph-hand-tap" aria-hidden="true"></i> Segure para ver
+                    </figcaption>
+                </figure>
+
+                <figure class="result-card" role="listitem">
+                    <img src="./image/depois-3.jpeg" class="img-layer img-after" alt="Aluno após o programa — resultado final">
+                    <img src="./image/antes-3.jpeg" class="img-layer img-before" alt="Aluno antes de iniciar o programa">
+                    <figcaption class="touch-hint">
+                        <i class="ph ph-hand-tap" aria-hidden="true"></i> Segure para ver
+                    </figcaption>
+                </figure>
+
+                <figure class="result-card" role="listitem">
+                    <img src="./image/depois-4.jpeg" class="img-layer img-after" alt="Aluno após o programa — resultado final">
+                    <img src="./image/antes-4.jpeg" class="img-layer img-before" alt="Aluno antes de iniciar o programa">
+                    <figcaption class="touch-hint">
+                        <i class="ph ph-hand-tap" aria-hidden="true"></i> Segure para ver
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <div id="planos" class="fade-in-up">
-            <div class="section-header">
-                <div class="section-icon"><i class="ph ph-crown-simple"></i></div>
-                <span class="section-title">Escolha seu Plano</span>
-            </div>
-            
-            <div class="carousel-track">
-                
-                <div class="plan-card">
-                    <div>
-                        <h4 class="plan-name">Start</h4>
-                        <div class="divider"></div>
-                        <ul class="feature-list">
-                            <li><i class="ph ph-check-circle"></i> Treino Individualizado</li>
-                            <li><i class="ph ph-check-circle"></i> Dieta Flexível</li>
-                            <li><i class="ph ph-check-circle"></i> Acesso ao App</li>
-                        </ul>
-                    </div>
-                    <button class="btn-outline" onclick="selectPlan('Plano Start')">Saber Mais</button>
-                </div>
-
-                <div class="plan-card highlight">
-                    <div class="badge-featured">Mais Popular</div>
-                    <div>
-                        <h4 class="plan-name" style="color: var(--primary);">Evolution</h4>
-                        <div class="divider"></div>
-                        <ul class="feature-list">
-                            <li><i class="ph ph-star-fill"></i> <strong>Tudo do Start</strong></li>
-                            <li><i class="ph ph-check-circle"></i> Ajustes Quinzenais</li>
-                            <li><i class="ph ph-check-circle"></i> Suporte WhatsApp VIP</li>
-                        </ul>
-                    </div>
-                    <button class="btn-primary" onclick="selectPlan('Plano Evolution')">QUERO EVOLUIR</button>
-                </div>
-
-                <div class="plan-card">
-                    <div class="badge-discount">Completo</div>
-                    <div>
-                        <h4 class="plan-name">Pro Anual</h4>
-                        <div class="divider"></div>
-                        <ul class="feature-list">
-                            <li><i class="ph ph-check-circle"></i> Acompanhamento Premium</li>
-                            <li><i class="ph ph-check-circle"></i> Videocall Mensal</li>
-                            <li><i class="ph ph-check-circle"></i> Planner Exclusivo</li>
-                        </ul>
-                    </div>
-                    <button class="btn-outline" onclick="selectPlan('Plano Pro Anual')">Saber Mais</button>
-                </div>
-
-            </div>
-        </div>
-
-        <section class="fade-in-up">
-            <div class="section-header">
-                <div class="section-icon"><i class="ph ph-camera"></i></div>
-                <span class="section-title">Resultados Reais</span>
-            </div>
-            <div class="results-scroller">
-                <div class="result-card">
-                    <img src="./image/WhatsApp Image 2026-02-04 at 14.40.24.jpeg" class="img-layer img-after" alt="Depois">
-                    <img src="./image/foto2.jpeg" class="img-layer img-before" alt="Antes">
-                    <div class="touch-hint"><i class="ph ph-hand-tap"></i> Segure para ver</div>
-                </div>
-                <div class="result-card">
-                    <img src="https://via.placeholder.com/300x400/2563eb/ffffff?text=DEPOIS" class="img-layer img-after" alt="Depois">
-                    <img src="https://via.placeholder.com/300x400/111111/666666?text=ANTES" class="img-layer img-before" alt="Antes">
-                    <div class="touch-hint"><i class="ph ph-hand-tap"></i> Segure para ver</div>
-                </div>
+        <!-- ===== DEPOIMENTOS ===== -->
+        <section class="marquee-section fade-in-up" aria-labelledby="titulo-depoimentos">
+            <h2 id="titulo-depoimentos" class="sr-only">Depoimentos dos Alunos</h2>
+            <div class="marquee-track" aria-hidden="true">
+                <blockquote class="feedback-card">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
+                    <footer><cite>— Lucas S.</cite></footer>
+                </blockquote>
+                <blockquote class="feedback-card">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>"Treino intenso e dieta fácil de seguir."</p>
+                    <footer><cite>— Ana P.</cite></footer>
+                </blockquote>
+                <blockquote class="feedback-card">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>"O suporte no WhatsApp é diferenciado."</p>
+                    <footer><cite>— Marcos V.</cite></footer>
+                </blockquote>
+                <blockquote class="feedback-card">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <p>"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
+                    <footer><cite>— Lucas S.</cite></footer>
+                </blockquote>
             </div>
         </section>
 
-        <section class="marquee-section fade-in-up">
-            <div class="marquee-track">
-                <div class="feedback-card">
-                    <div style="color:var(--accent);">★★★★★</div>
-                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
-                    <small style="display:block; margin-top:10px;">- Lucas S.</small>
-                </div>
-                <div class="feedback-card">
-                    <div style="color:var(--accent);">★★★★★</div>
-                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Treino intenso e dieta fácil de seguir."</p>
-                    <small style="display:block; margin-top:10px;">- Ana P.</small>
-                </div>
-                <div class="feedback-card">
-                    <div style="color:var(--accent);">★★★★★</div>
-                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"O suporte no WhatsApp é diferenciado."</p>
-                    <small style="display:block; margin-top:10px;">- Marcos V.</small>
-                </div>
-                <div class="feedback-card">
-                    <div style="color:var(--accent);">★★★★★</div>
-                    <p style="margin-top:8px; color:var(--text-muted); font-size:0.9rem;">"Melhor investimento do ano. Perdi 8kg em 2 meses."</p>
-                    <small style="display:block; margin-top:10px;">- Lucas S.</small>
-                </div>
-            </div>
-        </section>
-
-        <section class="fade-in-up">
+        <!-- ===== FAQ ===== -->
+        <section class="fade-in-up" aria-labelledby="titulo-faq">
             <div class="section-header">
-                <div class="section-icon"><i class="ph ph-question"></i></div>
-                <span class="section-title">Dúvidas Frequentes</span>
+                <div class="section-icon" aria-hidden="true"><i class="ph ph-question"></i></div>
+                <h2 id="titulo-faq" class="section-title">Dúvidas Frequentes</h2>
             </div>
             <div class="faq-box">
-                <details class="glass-card"><summary>Funciona para iniciantes?</summary><div class="answer">Sim! 80% dos alunos começam do zero.</div></details>
-                <details class="glass-card"><summary>Preciso de suplementos?</summary><div class="answer">Não. Priorizamos comida de verdade.</div></details>
-                <details class="glass-card"><summary>Tem dieta incluída?</summary><div class="answer">Sim, calculada para seu objetivo.</div></details>
-                <details class="glass-card"><summary>Treinar em casa dá certo?</summary><div class="answer">Sim, adapto para peso do corpo se necessário.</div></details>
-                <details class="glass-card"><summary>Formas de pagamento?</summary><div class="answer">Aceitamos PIX e Cartão de Crédito.</div></details>
+                <details class="glass-card">
+                    <summary>Tem dieta incluída?</summary>
+                    <div class="answer">Sim, calculada para seu objetivo.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Os protocolos são individualizados?</summary>
+                    <div class="answer">Sim. Nada é repetido. Tudo é estruturado de forma personalizada, considerando as informações que você preenche no formulário.</div>
+                </details>
+                 <details class="glass-card">
+                    <summary>Quanto tempo leva para receber meu protocolo?</summary>
+                    <div class="answer">O envio acontece em no máximo 24 horas após o formulário estar totalmente preenchido.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>A consultoria é apenas para atletas?</summary>
+                    <div class="answer">Não. A maior parte dos alunos são pessoas comuns que buscam evolução com método e segurança.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Mulheres podem participar?</summary>
+                    <div class="answer">Com certeza. A hipertrofia ocorre da mesma maneira, apenas mudam as prioridades.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Sou iniciante. Posso participar?</summary>
+                    <div class="answer">Sim. Inclusive, iniciantes costumam apresentar ótimos resultados quando seguem o processo corretamente.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Menor de idade pode entrar?</summary>
+                    <div class="answer">Pode sim, desde que haja autorização do responsável legal.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Como funciona a comunicação?</summary>
+                    <div class="answer">O contato é feito via WhatsApp exclusivo da equipe, com prazo de resposta de até 2 dias úteis.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Terei acompanhamento contínuo?</summary>
+                    <div class="answer">Sim. Você envia feedbacks, recebe ajustes estratégicos e seguimos evoluindo de forma progressiva.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Como funcionam as renovações?</summary>
+                    <div class="answer">As renovações acontecem em períodos específicos para manter organização e qualidade no atendimento. Se o seu ciclo terminar entre os dias 01 e 05, a renovação ocorre nessa janela. Se encerrar entre 15 e 20, acontece no segundo período. Você recebe aviso antecipado e pode renovar ou alterar o plano dentro da sua faixa de renovação.</div>
+                </details>
+                <details class="glass-card">
+                    <summary>Formas de pagamento?</summary>
+                    <div class="answer">Aceitamos PIX e Cartão de Crédito.</div>
+                </details>
             </div>
         </section>
 
-        <section id="form" class="fade-in-up">
+        <!-- ===== FORMULÁRIO DE APLICAÇÃO ===== -->
+        <section id="form" class="fade-in-up" aria-labelledby="titulo-form">
             <div class="form-area glass-card">
-                <h3 style="text-align:center; font-size:1.4rem; margin-bottom:8px; color:var(--text-main);">Aplicação</h3>
-                <p style="text-align:center; font-size:0.9rem; color:var(--text-muted); margin-bottom:24px;">Preencha para análise.</p>
-                <form id="leadForm">
-                    <label>Nome Completo</label><input type="text" id="nome" required>
-                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                        <div><label>Idade</label><input type="number" id="idade"></div>
-                        <div><label>Peso</label><input type="number" id="peso"></div>
+
+                <!-- Cabeçalho do formulário -->
+                <div class="form-header">
+                    <div class="form-icon-wrap" aria-hidden="true">
+                        <i class="ph ph-clipboard-text"></i>
                     </div>
-                    <label>Objetivo</label>
-                    <select id="objetivo">
-                        <option>Hipertrofia</option>
-                        <option>Emagrecimento</option>
-                        <option>Saúde</option>
-                    </select>
-                    <input type="hidden" id="planoSelecionado">
-                    <button type="submit" class="btn-primary">ENVIAR NO WHATSAPP <i class="ph ph-whatsapp-logo"></i></button>
+                    <h2 id="titulo-form" class="form-title">Quero Começar</h2>
+                    <p class="form-subtitle">Preencha o formulário e receba seu plano personalizado.</p>
+                </div>
+
+                <!-- Benefícios rápidos -->
+                <ul class="form-perks" aria-label="O que você recebe">
+                    <li><i class="ph ph-check-fat" aria-hidden="true"></i> Avaliação gratuita</li>
+                    <li><i class="ph ph-check-fat" aria-hidden="true"></i> Resposta em 24h</li>
+                    <li><i class="ph ph-check-fat" aria-hidden="true"></i> Sem compromisso</li>
+                </ul>
+
+                <form id="leadForm" novalidate>
+
+                    <!-- Nome -->
+                    <div class="input-group">
+                        <label for="nome">Nome Completo</label>
+                        <div class="input-wrap">
+                            <i class="ph ph-user" aria-hidden="true"></i>
+                            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome completo" required>
+                        </div>
+                    </div>
+
+                    <!-- Idade + Peso -->
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="idade">Idade</label>
+                            <div class="input-wrap">
+                                <i class="ph ph-calendar-blank" aria-hidden="true"></i>
+                                <input type="number" id="idade" name="idade" min="14" max="80" placeholder="Ex: 25">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="peso">Peso (kg)</label>
+                            <div class="input-wrap">
+                                <i class="ph ph-scales" aria-hidden="true"></i>
+                                <input type="number" id="peso" name="peso" min="30" max="300" placeholder="Ex: 80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objetivo -->
+                    <div class="input-group">
+                        <label for="objetivo">Objetivo Principal</label>
+                        <div class="input-wrap select-wrap">
+                            <i class="ph ph-target" aria-hidden="true"></i>
+                            <select id="objetivo" name="objetivo">
+                                <option value="hipertrofia">💪 Hipertrofia</option>
+                                <option value="emagrecimento">🔥 Emagrecimento</option>
+                                <option value="saude">❤️ Saúde e Qualidade de Vida</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Plano -->
+                    <div class="input-group">
+                        <label for="planoSelecionado">Plano de Interesse</label>
+                        <div class="input-wrap select-wrap">
+                            <i class="ph ph-crown-simple" aria-hidden="true"></i>
+                            <select id="planoSelecionado" name="planoSelecionado">
+                                <option value="apenas-treino">Apenas Treino</option>
+                                <option value="apenas-dieta">Apenas Dieta</option>
+                                <option value="treino-dieta">Treino + Dieta (Recomendado)</option>
+                                <option value="treino-casal">Treino Casal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+                        <span>ENVIAR NO WHATSAPP</span>
+                        <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                    </button>
+
+                    <p class="form-privacy">
+                        <i class="ph ph-lock" aria-hidden="true"></i>
+                        Seus dados são confidenciais e não serão compartilhados.
+                    </p>
                 </form>
             </div>
         </section>
 
-        <footer>&copy; 2026 Team Garin.</footer>
-        <a href="https://wa.me/5521999999999" class="whatsapp-float"><i class="ph ph-whatsapp-logo"></i></a>
+        <!-- ===== RODAPÉ ===== -->
+        <footer role="contentinfo">
+            <p>&copy; 2026 Team Leite. Todos os direitos reservados.</p>
+        </footer>
+
+    </div><!-- /.app-container -->
+
+    <!-- Botão flutuante WhatsApp — FORA do container para position:fixed funcionar -->
+    <div class="whatsapp-wrapper">
+        <span class="whatsapp-badge">Posso ajudar? 👋</span>
+        <a href="https://wa.me/5527997170215"
+           class="whatsapp-float"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Fale comigo pelo WhatsApp">
+            <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+        </a>
     </div>
+
 <script src="./js/script.js"></script>
 </body>
 </html>

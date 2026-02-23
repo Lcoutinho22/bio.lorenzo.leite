@@ -4,11 +4,13 @@
 
             document.getElementById('leadForm').addEventListener('submit', (e) => {
                 e.preventDefault();
-                const phone = "5521999999999"; 
+                const phone = "5527997170215"; 
                 const n = document.getElementById('nome').value;
                 const o = document.getElementById('objetivo').value;
+                const i = document.getElementById('idade').value;
+                const b = document.getElementById('peso').value;
                 const p = document.getElementById('planoSelecionado').value || "Geral";
-                window.open(`https://wa.me/${phone}?text=Nome:${n}%0AObjetivo:${o}%0APlano:${p}`, '_blank');
+                window.open(`https://wa.me/${phone}?text=Nome:${n}%0AIdade:${i}%0APeso:${b}%0AObjetivo:${o}%0APlano:${p}`, '_blank');
             });
 
             const themeBtn = document.getElementById('themeBtn');
