@@ -593,16 +593,38 @@ h1 {
 
 .result-card {
   min-width: 280px;
+  width: min(280px, 80vw);
   height: 380px;
   scroll-snap-align: center;
   border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
   /* Aplicação do Vidro */
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
   box-shadow: var(--card-shadow);
+  /* Garante que imagens não ultrapassem o card */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* === Correção para iPhones pequenos (SE, 12 mini, etc.) === */
+@media (max-width: 390px) {
+  .result-card {
+    min-width: 0;
+    width: calc(100vw - 64px);
+    height: 340px;
+  }
+}
+
+/* === Garante padding no scroller para não cortar cards === */
+@media (max-width: 480px) {
+  .results-scroller {
+    padding: 0 20px;
+    padding-right: 24px;
+  }
 }
 .img-layer {
   position: absolute;
@@ -615,9 +637,13 @@ h1 {
 .img-before {
   z-index: 2;
 }
-.result-card:active .img-before,
-.result-card:hover .img-before {
+/* JS-controlled toggle: .revealed mostra o depois (img-after), esconde o antes (img-before) */
+.result-card.revealed .img-before {
   opacity: 0;
+}
+/* Cursor pointer para indicar interatividade */
+.result-card {
+  cursor: pointer;
 }
 .touch-hint {
   position: absolute;
